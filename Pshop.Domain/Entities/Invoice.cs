@@ -11,7 +11,6 @@ public class Invoice : BaseEntity
     public string? MerchantCode { get; set; }
     public long TotalPrice { get; set; }
     public PaymentPortal PaymentPortal { get; set; }
-
 }
 
 public enum InvoiceStatus
