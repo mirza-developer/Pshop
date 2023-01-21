@@ -19,6 +19,4 @@ public class PshopUser : IdentityUser
     public Guid CreatorId { get; set; }
     public DateTime? LastModifierDatetime { get; set; }
     public Guid? LastModifierId { get; set; }
-
-    public ICollection<UserAddress> Addresses { get; set; }
 }
