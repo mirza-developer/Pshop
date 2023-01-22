@@ -21,6 +21,8 @@ public class ProductColor : BaseEntity
     [Required]
     public decimal Price { get; set; }
 
+    public int? DiscountPercent { get; set; }
+
     public Guid ProductId { get; set; }
     public Product Product { get; set; }
 }

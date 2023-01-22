@@ -12,6 +12,12 @@ public class Invoice : BaseEntity
     public string? MerchantCode { get; set; }
     public long TotalPrice { get; set; }
 
+    public Guid? DiscountId { get; set; }
+    public Discount Discount { get; set; }
+
+    [StringLength(256)]
+    public string? Description { get; set; }
+
     [Required]
     public PaymentPortal PaymentPortal { get; set; }
 }
