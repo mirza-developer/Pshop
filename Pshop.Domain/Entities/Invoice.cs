@@ -13,7 +13,7 @@ public class Invoice : BaseEntity
     public long TotalPrice { get; set; }
 
     public Guid? DiscountId { get; set; }
-    public Discount Discount { get; set; }
+    public DiscountCode Discount { get; set; }
 
     [StringLength(256)]
     public string? Description { get; set; }
